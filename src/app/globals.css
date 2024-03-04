@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
+
+:root {
+  --special: #fce6a4;
+}
+
+span {
+  background-color: var(--special);
+  background-clip: text;
+  color: transparent;
+  cursor: default;
+}

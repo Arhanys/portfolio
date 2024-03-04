@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import {Playfair_Display, Archivo_Black} from "next/font/google"
 const playfair = Playfair_Display({
-  weight:'700',
+  weight:'400',
   subsets: ['latin'],
   variable: '--font-playfair',
 });
