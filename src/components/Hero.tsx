@@ -19,7 +19,8 @@ export default function Hero() {
     }, []);
 
     return(
-        <section className="h-[90%] flex flex-col items-center overflow-hidden ">
+        <section className="h-[90%] flex flex-col items-center overflow-hidden relative">
+            <div id="yellowLight"></div>
             <h1 id="heroTitle" className="h-2/3 font-archivo flex items-center justify-center text-[27vw]  relative text-special cursor-default">
                 <span>E</span>
                 <span>t</span>

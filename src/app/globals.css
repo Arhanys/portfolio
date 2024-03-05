@@ -125,3 +125,16 @@
     font-size: 2rem;
   }
 }
+
+/* TEMPORARY */
+
+#yellowLight {
+  height: 40rem;
+  width: 75%;
+  background: linear-gradient(to bottom, rgba(255, 197, 61, 0.364) 0%, rgba(255, 197, 61, 0) 25%);
+  filter: blur(50px);
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+}
