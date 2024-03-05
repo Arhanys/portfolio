@@ -2,7 +2,7 @@ export default function NavBar() {
     return(
         <>  
             <div className="h-[10%] relative">
-                <ul className="h-full flex justify-around items-center text-special font-playfair text-xl">
+                <ul className="h-full flex justify-around items-center text-special font-playfair text-2xl">
                     <li className="hover:text-amber-9 hover:scale-110 transition-all"><a href="#">Home</a></li>
                     <li className="hover:text-amber-9 hover:scale-110 transition-all"><a href="#projects">Projects</a></li>
                     <li className="hover:text-amber-9 hover:scale-110 transition-all"><a href="">Skills</a></li>

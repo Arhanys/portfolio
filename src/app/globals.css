@@ -6,9 +6,74 @@
   --special: #fce6a4;
 }
 
-span {
-  background-color: var(--special);
+/* PROJECTS SECTION */
+
+#bentoItem {
+  background: #174933;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+#bentoItem[data-index="1"] {
+  background: #f8c6c4;
+  position: relative;
+}
+
+#bentoItem[data-index="1"]:hover::after {
+  transform: translateY(0%);
+}
+
+#bentoItem[data-index="1"]::after {
+  position: absolute;
+  content: "";
+  background-color: #0e15127e;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: translateY(100%);
+  transition: ease 500ms;
+}
+
+#bentoItem[data-index="5"] h2 {
+  position: relative;
+  background: linear-gradient(-45deg, rgba(65, 210, 160, 1) 3%, rgba(40, 200, 116, 1) 45%, rgba(43, 216, 34, 1) 100%);
   background-clip: text;
   color: transparent;
-  cursor: default;
+  z-index: 2;
 }
+
+#bentoItem[data-index="5"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #e6f6eb;
+  z-index: -10;
+}
+#bentoItem[data-index="5"]:hover::after {
+  transform: translateY(0%);
+}
+
+#bentoItem[data-index="5"]::after {
+  position: absolute;
+  content: "";
+  color: white;
+  background-color: #0e15129c;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  transform: translateY(100%);
+  transition: ease 500ms;
+}
+
+/* SKILLS SECTION */
