@@ -29,8 +29,15 @@
 
 #bentoItem[data-index="1"]::after {
   position: absolute;
-  content: "";
-  background-color: #0e15127e;
+  content: "CharlynArt is a Portfolio that I made for a graphic designer. She wanted to have something nice and girly to show off her talent.";
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--special);
+  background-color: #0e1512cb;
   width: 100%;
   height: 100%;
   top: 0;
@@ -38,6 +45,7 @@
   z-index: 1;
   transform: translateY(100%);
   transition: ease 500ms;
+  padding-inline: 24px;
 }
 
 #bentoItem[data-index="5"] h2 {
@@ -64,9 +72,15 @@
 
 #bentoItem[data-index="5"]::after {
   position: absolute;
-  content: "";
-  color: white;
-  background-color: #0e15129c;
+  content: "Zeta is a project made by two passionate developers. I'm in charge of all the designs and front-end part of it. ";
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--special);
+  background-color: #0e1512cb;
   width: 100%;
   height: 100%;
   top: 0;
@@ -77,3 +91,37 @@
 }
 
 /* SKILLS SECTION */
+
+/* HEXAGON */
+
+#triangleUp {
+  width: 0;
+  background-color: transparent;
+  border-bottom: 3vw solid red;
+  border-left: 5.2vw solid transparent;
+  border-right: 5.2vw solid transparent;
+}
+
+#triangleDown {
+  width: 0;
+  background-color: transparent;
+  border-top: 3vw solid red;
+  border-left: 5.2vw solid transparent;
+  border-right: 5.2vw solid transparent;
+}
+
+#square {
+  width: 10.4vw;
+  height: 6vw;
+  background-color: red;
+}
+/* RESPONSIVE */
+
+@media screen and (min-width: 1540px) {
+  #bentoItem[data-index="5"]::after {
+    font-size: 2rem;
+  }
+  #bentoItem[data-index="1"]::after {
+    font-size: 2rem;
+  }
+}

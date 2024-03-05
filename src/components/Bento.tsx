@@ -52,6 +52,8 @@ export default function Bento() {
             animation: tl, // Pass your timeline to the animation property
             trigger: '#projects', // Specify the trigger element or scroll position
             start: () => `top-=300 center`,
+            end: 'bottom center',
+            toggleActions:'play reverse play reverse',
         });
 
     }, []);
