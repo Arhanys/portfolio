@@ -2,6 +2,7 @@
 
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
+import TypeIt from "typeit-react"
 
 
 export default function Hero() {
@@ -28,7 +29,13 @@ export default function Hero() {
                 <span>a</span>
                 <span>n</span>
             </h1>
-            <p className="font-playfair text-[3.5vw] text-amber-9">Front-end Dev. and Designer</p>
+            <TypeIt
+                options={{speed:80, loop:true}}  
+                getBeforeInit={(instance) => {
+                    instance.type("Front-end Dev and Desginer.").pause(750).delete(9).pause(500).type('Musician.').pause(500).delete(9).type('Jokester.');
+                    return instance;}}
+                className="font-playfair text-[3.5vw] text-amber-9 w-1/2">
+            </TypeIt>
         </section>
     )
 }
