@@ -35,7 +35,7 @@ export default function Hero() {
             <TypeIt
                 options={{speed:80, loop:true}}  
                 getBeforeInit={(instance) => {
-                    instance.type("Front-end Dev and Desginer.").pause(750).delete(9).pause(500).type('Musician.').pause(500).delete(9).type('Jokester.');
+                    instance.type("Front-end Dev and Designer.").pause(750).delete(9).pause(500).type('Musician.').pause(500).delete(9).pause(500).type('Jokester.').pause(750);
                     return instance;}}
                 className="font-playfair text-[3.5vw] text-amber-9 w-1/2">
             </TypeIt>
