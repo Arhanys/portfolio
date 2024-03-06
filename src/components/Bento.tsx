@@ -23,31 +23,14 @@ export default function Bento() {
         const tl = gsap.timeline({defaults:{duration:0.3 }});
         setTl(tl);
 
-        tl.from(items.item5,{
-            y:1000,
-        }, 1)
-
-
-        tl.from(items.item2, {
-            x:-2000,
-        },2.1)
-        tl.from(items.item3, {
-            y:1200
-        },2)
-        tl.from(items.item7, {
-            x:-2000
-        },2.3)
-        tl.from(items.item4, {
-            y:1000
-        },2.5)
-
-
-        tl.from(items.item6, {
-            x:-2000
-        })
-        tl.from(items.item1, {
-            y:-1000
-        })
+        tl.from(items.item5, { y: 1000 }, 1);
+        tl.from(items.item2, { x: -2000 }, 1.8);
+        tl.from(items.item3, { y: 1200 }, 1.7);
+        tl.from(items.item7, { x: -2000 }, 2);
+        tl.from(items.item4, { y: 1000 }, 2.2);
+        tl.from(items.item6, { x: -2000 }, 2.3);
+        tl.from(items.item1, { y: -1000 }, 2.4);
+        
         /* Trigger animation with a trigger point */
         ScrollTrigger.create({
             animation: tl, // Pass your timeline to the animation property
