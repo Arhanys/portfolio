@@ -66,22 +66,22 @@ export default function Bento() {
                 <h2 className="absolute bottom-2 2xl:bottom-8 font-playfair text-5xl 2xl:text-7xl text-[#CB1D63]">CharlynArt</h2>
             </div>
             <div data-index="2" id="bentoItem" className="col-span-3">
-                <h2 className="text-5xl 2xl:text-7xl font-archivo italic text-special">INSERT SOME TEXT</h2>
+                <h2 className="text-5xl 2xl:text-6xl font-archivo italic text-special">INSERT SOME TEXT</h2>
             </div>
             <div data-index="3" id="bentoItem" className=" row-span-4">
-                <h2 className="text-special font-archivo text-6xl 2xl:text-8xl whitespace-nowrap rotate-90">Future is now !</h2>
+                <h2 className="text-special font-archivo text-6xl 2xl:text-7xl whitespace-nowrap rotate-90">Future is now !</h2>
             </div>
             <div data-index="4" id="bentoItem" className=" row-span-3">
-                <h2 className="text-[2.7rem] 2xl:text-7xl justify-center font-archivo text-special -rotate-90  whitespace-nowrap">Fun and Design</h2>
+                <h2 className="text-[2.7rem] 2xl:text-6xl justify-center font-archivo text-special -rotate-90  whitespace-nowrap">Fun and Design</h2>
             </div>
             <div data-index="5" id="bentoItem" className=" col-span-2 row-span-2 ">
                 <h2 className=" text-8xl 2xl:text-9xl font-archivo ">Zeta</h2>
             </div>
             <div data-index="6" id="bentoItem" className=" col-span-2">
-                <h2 className="text-7xl 2xl:text-9xl font-playfair text-amber-9">Portfolio</h2>
+                <h2 className="text-7xl 2xl:text-8xl font-playfair text-amber-9">Portfolio</h2>
             </div>
             <div data-index="7" id="bentoItem" className=" col-span-2">
-                <h2 className="text-7xl 2xl:text-9xl font-playfair text-amber-9">Projects</h2>
+                <h2 className="text-7xl 2xl:text-8xl font-playfair text-amber-9">Projects</h2>
             </div>
 
             </div>
