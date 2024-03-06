@@ -7,10 +7,10 @@ import TypeIt from "typeit-react"
 
 export default function Hero() {
 
-
+    /* Animation */
     useGSAP(() =>{
         const spans = document.querySelectorAll('#heroTitle span')
-
+        
         gsap.from(spans,{
             x:10000,
             duration:1,
@@ -21,7 +21,9 @@ export default function Hero() {
 
     return(
         <section className="h-[90%] flex flex-col items-center overflow-hidden relative">
+            {/* Yellow light under the border of the NavBar to avoid flat color */}
             <div id="yellowLight"></div>
+            {/* Text divided into span because it is animated letter by letter */}
             <h1 id="heroTitle" className="h-2/3 font-archivo flex items-center justify-center text-[27vw]  relative text-special cursor-default">
                 <span>E</span>
                 <span>t</span>
@@ -29,6 +31,7 @@ export default function Hero() {
                 <span>a</span>
                 <span>n</span>
             </h1>
+            {/* Typing animation for my subTitle */}
             <TypeIt
                 options={{speed:80, loop:true}}  
                 getBeforeInit={(instance) => {

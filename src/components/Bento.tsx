@@ -9,9 +9,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 export default function Bento() {
-
+    /* Create a state for the timeline */
     const [tl, setTl] = useState<any | null>(null);
 
+    /* Animation */
     useGSAP(()=>{
         const items: Record<string, HTMLElement | null> = {};
 
@@ -47,7 +48,7 @@ export default function Bento() {
         tl.from(items.item1, {
             y:-1000
         })
-
+        /* Trigger animation with a trigger point */
         ScrollTrigger.create({
             animation: tl, // Pass your timeline to the animation property
             trigger: '#projects', // Specify the trigger element or scroll position
@@ -59,7 +60,9 @@ export default function Bento() {
     }, []);
 
     return(
+        /* Section */
         <section id="projects" className="bg-grass-3 h-screen flex items-center justify-center overflow-hidden">
+            {/* Container of my moving divs */}
             <div id="bentoContainer" className="grid grid-rows-4 grid-cols-6 bg-grass-1 h-4/5 w-4/5 rounded-xl p-6 gap-4">
             <div data-index="1" id="bentoItem" className=" row-span-3 col-span-2">
                 <img src="img/LogoCharlynArt.png" alt=""/>

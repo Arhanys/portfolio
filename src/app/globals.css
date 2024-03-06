@@ -8,6 +8,7 @@
 
 /* PROJECTS SECTION */
 
+/* Generic Bento item */
 #bentoItem {
   background: #174933;
   border-radius: 0.5rem;
@@ -18,11 +19,13 @@
   position: relative;
 }
 
+/* Added background to fill container space. */
 #bentoItem[data-index="1"] {
   background: #f8c6c4;
   position: relative;
 }
 
+/* Style of the bentoItem 1 */
 #bentoItem[data-index="1"]:hover::after {
   transform: translateY(0%);
 }
@@ -48,6 +51,7 @@
   padding-inline: 24px;
 }
 
+/* Style of the bentoItem 5 */
 #bentoItem[data-index="5"] h2 {
   position: relative;
   background: linear-gradient(-45deg, rgba(65, 210, 160, 1) 3%, rgba(40, 200, 116, 1) 45%, rgba(43, 216, 34, 1) 100%);

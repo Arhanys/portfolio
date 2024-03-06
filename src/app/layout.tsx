@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import {Playfair_Display, Archivo_Black} from "next/font/google"
 
+/* IMPORT FONT WEIGHT */
 const playfair = Playfair_Display({
   weight:'400',
   subsets: ['latin'],
@@ -13,6 +14,8 @@ const archivo = Archivo_Black({
   variable: '--font-archivo',
 })
 
+
+/* EXPORT METADATA */
 export const metadata: Metadata = {
   title: "Ethan's Portfolio",
 };
