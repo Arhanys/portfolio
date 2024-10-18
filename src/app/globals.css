@@ -20,78 +20,19 @@
 }
 
 /* Added background to fill container space. */
-#bentoItem[data-index="1"] {
-  background: #f8c6c4;
-  position: relative;
-}
 
 /* Style of the bentoItem 1 */
-#bentoItem[data-index="1"]:hover::after {
-  transform: translateY(0%);
+#bentoItem[data-index="1"] {
+  background: #1a1a1a;
 }
-
-#bentoItem[data-index="1"]::after {
-  position: absolute;
-  content: "CharlynArt is a Portfolio that I made for a graphic designer. She wanted to have something nice and girly to show off her talent.";
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--special);
-  background-color: #0e1512cb;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  transform: translateY(100%);
-  transition: ease 500ms;
-  padding-inline: 24px;
-}
-
 /* Style of the bentoItem 5 */
-#bentoItem[data-index="5"] h2 {
-  position: relative;
-  background: linear-gradient(-45deg, rgba(65, 210, 160, 1) 3%, rgba(40, 200, 116, 1) 45%, rgba(43, 216, 34, 1) 100%);
-  background-clip: text;
-  color: transparent;
-  z-index: 2;
+#bentoItem[data-index="5"] {
+  background: #1a1a1a;
 }
 
-#bentoItem[data-index="5"]::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #e6f6eb;
-  z-index: -10;
-}
-#bentoItem[data-index="5"]:hover::after {
-  transform: translateY(0%);
-}
-
-#bentoItem[data-index="5"]::after {
-  position: absolute;
-  content: "Zeta is a project made by two passionate developers. I'm in charge of all the designs and front-end part of it. ";
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--special);
-  background-color: #0e1512cb;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 3;
-  transform: translateY(100%);
-  transition: ease 500ms;
+/* Style of the bentoItem 7 */
+#bentoItem[data-index="7"] {
+  padding-bottom: 5%;
 }
 
 /* SKILLS SECTION */
@@ -141,4 +82,8 @@
   top: 0%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+#yellowLightDiag {
+  background: #1a1a1a;
 }
