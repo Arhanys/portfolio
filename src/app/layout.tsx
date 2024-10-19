@@ -1,31 +1,28 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import {Playfair_Display, Archivo_Black} from "next/font/google"
+import { Playfair_Display, Archivo_Black } from "next/font/google";
 
 /* IMPORT FONT WEIGHT */
 const playfair = Playfair_Display({
-  weight:'400',
-  subsets: ['latin'],
-  variable: '--font-playfair',
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-playfair",
 });
 const archivo = Archivo_Black({
-  weight: '400',
-  subsets: ['latin'],
-  variable: '--font-archivo',
-})
-
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-archivo",
+});
 
 /* EXPORT METADATA */
 export const metadata: Metadata = {
   title: "Ethan's Portfolio",
 };
 
-export default function RootLayout({ children,}: Readonly<{children: React.ReactNode;}>) 
-{  
-  
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-      <html lang="en">
-          <body className={`${archivo.variable} ${playfair.variable} h-screen bg-grass-3`}>{children}</body>
-      </html>
+    <html lang="en">
+      <body className={`${archivo.variable} ${playfair.variable} h-screen bg-grass-3`}>{children}</body>
+    </html>
   );
 }
