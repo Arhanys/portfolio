@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <>
-      <section id="footer" className="h-1/3 bg-grass-1 pt-3 px-6 flex">
+      <section id="footer" className="h-1/3 bg-grass-1 pt-3 px-6 hidden lg:flex">
         <div className="h-full w-1/2 flex flex-col items-start justify-center">
           <h1 className="text-5xl font-playfair text-amber-9">Contact me</h1>
           <div className="mt-6 ">
@@ -11,7 +11,9 @@ export default function Footer() {
           </div>
         </div>
         <div className="h-full w-1/2 flex items-center">
-          <h1 className="font-playfair text-6xl text-amber-9 underline">Feel free to contact me !</h1>
+          <h1 className="font-playfair text-6xl text-amber-9 underline underline-offset-8">
+            Feel free to contact me !
+          </h1>
         </div>
       </section>
     </>

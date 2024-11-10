@@ -42,11 +42,11 @@ export default function Bento() {
 
   return (
     /* Section */
-    <section id="projects" className="bg-grass-3 h-screen flex items-center justify-center overflow-hidden">
+    <section id="projects" className="bg-grass-3 h-screen hidden lg:flex items-center justify-center overflow-hidden">
       {/* Container of my moving divs */}
       <div id="bentoContainer" className="grid grid-rows-4 grid-cols-6 bg-grass-1 h-4/5 w-4/5 rounded-xl p-6 gap-4">
         <div data-index="1" id="bentoItem" className=" row-span-3 col-span-2">
-          <div id="testCircle"></div>
+          <div id="littleSun"></div>
         </div>
         <div data-index="2" id="bentoItem" className="col-span-3">
           <h2 className="text-[4vw] 2xl:text-6xl font-archivo italic text-special">English speaker</h2>
@@ -60,7 +60,7 @@ export default function Bento() {
           </h2>
         </div>
         <div data-index="5" id="bentoItem" className=" col-span-2 row-span-2 ">
-          <div id="testCircle"></div>
+          <div id="littleSun"></div>
         </div>
         <div data-index="6" id="bentoItem" className=" col-span-2">
           <h2 className="text-[4.5vw] 2xl:text-8xl font-playfair text-amber-9">Portfolio</h2>

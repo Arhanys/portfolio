@@ -1,6 +1,6 @@
 export default function Skills() {
   return (
-    <section id="skills" className="h-screen">
+    <section id="skills" className="h-screen hidden lg:block">
       <div className="w-full h-screen  flex justify-center flex-col">
         <div className=" w-full h-1/3 flex justify-center items-center gap-48">
           <div className="bg-grass-1 h-[95%] aspect-square rounded-full flex items-center justify-center p-6 hover:shadow-lg hover:shadow-grass-9 relative group">
