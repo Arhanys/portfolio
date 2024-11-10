@@ -45,26 +45,28 @@ export default function Bento() {
     <section id="projects" className="bg-grass-3 h-screen flex items-center justify-center overflow-hidden">
       {/* Container of my moving divs */}
       <div id="bentoContainer" className="grid grid-rows-4 grid-cols-6 bg-grass-1 h-4/5 w-4/5 rounded-xl p-6 gap-4">
-        <div data-index="1" id="bentoItem" className=" row-span-3 col-span-2"></div>
+        <div data-index="1" id="bentoItem" className=" row-span-3 col-span-2">
+          <div id="testCircle"></div>
+        </div>
         <div data-index="2" id="bentoItem" className="col-span-3">
-          <h2 className="text-5xl 2xl:text-6xl font-archivo italic text-special">English speaker</h2>
+          <h2 className="text-[4vw] 2xl:text-6xl font-archivo italic text-special">English speaker</h2>
         </div>
         <div data-index="3" id="bentoItem" className=" row-span-4">
-          <h2 className="text-special font-archivo text-6xl 2xl:text-5xl whitespace-nowrap rotate-90">
-            Ready for action
-          </h2>
+          <h2 className="text-special font-archivo text-[3.5vw] whitespace-nowrap rotate-90">Ready for action</h2>
         </div>
         <div data-index="4" id="bentoItem" className=" row-span-3">
-          <h2 className="text-[2.7rem] 2xl:text-6xl justify-center font-archivo text-special -rotate-90  whitespace-nowrap">
+          <h2 className="text-[3.5vw] 2xl:text-6xl justify-center font-archivo text-special -rotate-90  whitespace-nowrap">
             Design first
           </h2>
         </div>
-        <div data-index="5" id="bentoItem" className=" col-span-2 row-span-2 "></div>
+        <div data-index="5" id="bentoItem" className=" col-span-2 row-span-2 ">
+          <div id="testCircle"></div>
+        </div>
         <div data-index="6" id="bentoItem" className=" col-span-2">
-          <h2 className="text-7xl 2xl:text-8xl font-playfair text-amber-9">Portfolio</h2>
+          <h2 className="text-[4.5vw] 2xl:text-8xl font-playfair text-amber-9">Portfolio</h2>
         </div>
         <div data-index="7" id="bentoItem" className=" col-span-2">
-          <h2 className="text-7xl 2xl:text-8xl font-playfair text-amber-9">Projects</h2>
+          <h2 className="text-[4.5vw] 2xl:text-8xl font-playfair text-amber-9">Projects</h2>
         </div>
       </div>
     </section>

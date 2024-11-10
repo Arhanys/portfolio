@@ -35,44 +35,6 @@
   padding-bottom: 5%;
 }
 
-/* SKILLS SECTION */
-
-/* HEXAGON */
-
-#triangleUp {
-  width: 0;
-  background-color: transparent;
-  border-bottom: 3vw solid red;
-  border-left: 5.2vw solid transparent;
-  border-right: 5.2vw solid transparent;
-}
-
-#triangleDown {
-  width: 0;
-  background-color: transparent;
-  border-top: 3vw solid red;
-  border-left: 5.2vw solid transparent;
-  border-right: 5.2vw solid transparent;
-}
-
-#square {
-  width: 10.4vw;
-  height: 6vw;
-  background-color: red;
-}
-/* RESPONSIVE */
-
-@media screen and (min-width: 1540px) {
-  #bentoItem[data-index="5"]::after {
-    font-size: 2rem;
-  }
-  #bentoItem[data-index="1"]::after {
-    font-size: 2rem;
-  }
-}
-
-/* TEMPORARY */
-
 #yellowLight {
   height: 40rem;
   width: 75%;
@@ -86,4 +48,23 @@
 
 #yellowLightDiag {
   background: #1a1a1a;
+}
+
+#bentoItem[data-index="1"]:hover,
+#bentoItem[data-index="5"]:hover {
+  box-shadow: inset 0 0 10px var(--special);
+  transition: 500ms;
+}
+
+#testCircle {
+  background: #ffc53d;
+  box-shadow: 0 0 5rem #ffc53d;
+  border-radius: 50%;
+  width: 10vw;
+  aspect-ratio: 1/1;
+}
+
+#testCircle:hover {
+  box-shadow: 0 0 8rem #ffc53d;
+  transition: 500ms;
 }
