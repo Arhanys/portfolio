@@ -64,7 +64,57 @@
   aspect-ratio: 1/1;
 }
 
-#littleSun:hover {
+#mobileSun {
+  background: #ffc53d;
+  box-shadow: 0 0 3rem #ffc53d;
+  border-radius: 50%;
+  width: 50%;
+  aspect-ratio: 1/1;
+  animation: glowingSun 6s infinite;
+}
+
+#funnySun {
+  background: #ffc53d;
+  box-shadow: 0 0 3rem #ffc53d;
+  border-radius: 50%;
+  width: 50%;
+  aspect-ratio: 1/1;
+  animation: glowingSun 6s infinite;
+  animation: randomOpacity 6s infinite;
+}
+
+@keyframes glowingSun {
+  0% {
+    box-shadow: 0 0 3rem #ffc53d;
+  }
+  50% {
+    box-shadow: 0 0 6rem #ffc53d;
+  }
+  100% {
+    box-shadow: 0 0 3rem #ffc53d;
+  }
+}
+
+@keyframes randomOpacity {
+  0% {
+    opacity: 0.2;
+  }
+  35% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+#bentoItem[data-index="1"]:hover > #littleSun,
+#bentoItem[data-index="5"]:hover > #littleSun {
   box-shadow: 0 0 8rem #ffc53d;
   transition: 500ms;
 }

@@ -17,11 +17,15 @@ const archivo = Archivo_Black({
 /* EXPORT METADATA */
 export const metadata: Metadata = {
   title: "Ethan's Portfolio",
+  description: "A front-end dev portfolio built with love.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="shortcut icon" href="/svg/logo.svg" type="image/x-icon" />
+      </head>
       <body className={`${archivo.variable} ${playfair.variable} h-screen bg-grass-3`}>{children}</body>
     </html>
   );

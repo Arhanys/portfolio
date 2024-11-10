@@ -7,6 +7,7 @@ import Bento from "@/components/Bento";
 import Skills from "@/components/Skills";
 import Footer from "@/components/Footer";
 import MobileNav from "@/components/MobileNav";
+import MobileHero from "@/components/MobileHero";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       </ReactLenis>
       {/* mobile version */}
       <MobileNav />
+      <MobileHero />
     </>
   );
 }

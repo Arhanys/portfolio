@@ -36,7 +36,6 @@ export default function Bento() {
       trigger: "#projects", // Specify the trigger element or scroll position
       start: () => `top-=300 center`,
       end: "bottom center",
-      toggleActions: "play reverse play reverse",
     });
   }, []);
 
