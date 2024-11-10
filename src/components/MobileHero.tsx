@@ -2,7 +2,7 @@ import TypeIt from "typeit-react";
 
 export default function MobileHero() {
   return (
-    <section id="hero" className="bg-grass-3 h-fit flex flex-col items-center">
+    <section id="hero" className="bg-grass-3 h-fit flex flex-col items-center md:hidden">
       <h1 className="font-archivo text-[10vw] 2xl:text-[12vw] text-special">Hi, I&apos;m Ethan</h1>
       <TypeIt
         options={{ speed: 100, loop: true }}
