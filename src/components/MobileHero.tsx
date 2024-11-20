@@ -30,7 +30,6 @@ export default function MobileHero() {
           className="w-1/2 aspect-square absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
         />
       </div>
-      <div className="bg-red-500 w-full h-32 mt-16"></div>
     </section>
   );
 }
