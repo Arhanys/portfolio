@@ -1,7 +1,7 @@
 export default function MobileSkills() {
   return (
     <>
-      <div className=" h-2/5 flex flex-col mt-10">
+      <div className="lg:hidden h-2/5 flex flex-col">
         <div className=" w-full h-1/2 flex items-center justify-around">
           <div className="bg-grass-2 w-1/4 aspect-square rounded-full relative">
             <img src="/img/reactJs.png" alt="" />
